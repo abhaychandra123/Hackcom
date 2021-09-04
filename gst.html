@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>
+                <input type="text" id="amount">
+                <select name="" id="menu">
+                    <option value="A1">Grains,sanitary napkins , etc.</option>
+                    <option value="A2">Cut and semi-polished stones</option>
+                    <option value="A3">sugar,spices,edible oil,etc.</option>
+                    <option value="A4">Computer Monitor,Spectacles,etc.</option>
+                    <option value="A5">Soaps,Hair oil,etc.</option>
+                    <option value="A6">AC,Refrigerator,etc.</option>
+                </select>
+            </td>
+            <td>
+                <button class="btn calculate-btn" onclick="gst()">Get Your amount with GST</button>
+            </td>
+        </tr>
+    </table>
+    <table>
+        <div class="amountwithgst"></div>
+    </table>
+    <script src="gst.js"></script>
+</body>
+</html>
