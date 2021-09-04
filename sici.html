@@ -1,0 +1,44 @@
+<html>
+<head>
+<title>JavaScript Program to find Simple Interest and Compound Interest</title>
+</head>
+<body>
+<table>
+<tr>
+<td> <input type="text" name="a" id="principle" placeholder="Enter principal"/> </td>
+</tr>
+<tr>
+<td> <input type="text" name="b" id="time" placeholder="Enter time period "/> </td>
+</tr>
+<tr>
+<td> <input type="text" name="c" id="rate" placeholder="Enter rate of interest(%)"/> </td>
+</tr>
+<tr>
+<td> <button onclick = "sici()" >Submit</button> </td>
+</tr>
+</table>
+<div id="num"> </div>
+<div id="num1"></div>
+<div id="num2"></div>
+<div id="num3"></div>
+      <div ><a href="/">Return To HOMEPAGE</a></div>
+
+</body>
+
+<script>
+function sici(){
+    
+    let p = document.getElementById("principle").value;
+    let r = document.getElementById("rate").value;
+    let t = document.getElementById("time").value;
+    let SI = (p*r*t)/100;
+    let Asi= parseFloat(p) + parseFloat((p*r*t)/100);
+    let A = p*(1+r/100)**t;
+    let CI = A-p;
+    document.getElementById("num").innerHTML=`${SI}`;
+    document.getElementById("num1").innerHTML="Your amount of S.I. is  "+`${Asi}`;
+    document.getElementById("num2").innerHTML=`${CI}`;
+    document.getElementById("num3").innerHTML="Your amount of C.I. is  "+`${A}`;
+}
+</script>
+</html>
