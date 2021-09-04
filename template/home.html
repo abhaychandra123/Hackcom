@@ -146,6 +146,40 @@ margin: 0;
     align-self: center;
 }
 /* chill-items */
+/* tools */
+.tool-container{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+    "contenta contentb"
+    "contentc contentd";
+}
+.tool-item1{
+    background-color: red;
+    grid-area: contenta;
+}
+.tool-item2{
+    background-color: green;
+    grid-area: contentb;
+}
+.tool-item3{
+    background-color: purple;
+    grid-area: contentc;
+}
+.tool-item4{
+    background-color: lightblue;
+    grid-area: contentd;
+}
+.tool-item-heading{
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: white;
+    margin: 200px 0 200px 0;
+}
+/* tools */
 </style>
 <!-- CSS-->
 </head>
@@ -188,6 +222,13 @@ margin: 0;
         Make Finance Easy with 	—
     </section>
     <!-- Divider-->
+    <!-- Tools-->
+    <div class="tool-container">
+        <a href="#" style="text-decoration: none;" class="tool-item1"><div><h2 class="tool-item-heading"><span>Interest/Loan Calculator</span></h2></div></a>
+        <a href="#" style="text-decoration: none;" class="tool-item2"><div><h2 class="tool-item-heading"><span>Interest/Loan Calculator</span></h2></div></a>
+        <a href="#" style="text-decoration: none;" class="tool-item3"><div><h2 class="tool-item-heading"><span>Interest/Loan Calculator</span></h2></div></a>
+        <a href="#" style="text-decoration: none;" class="tool-item4"><div><h2 class="tool-item-heading"><span>Interest/Loan Calculator</span></h2></div></a>
+    </div>
     <!-- Tools-->
 </body>
 </html>
