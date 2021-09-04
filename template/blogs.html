@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Blogs</title>
+    <!-- Poppins Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <!-- Poppins Font-->
+    <!-- CSS-->
+<style>
+    /* Navbar */
+    body{
+    margin: 0;
+    }
+    .navbar-container{
+        background-color: black;
+        grid-area: header;
+        display: grid;
+        grid-template-columns: repeat(9, 1fr);
+        grid-template-rows: auto;
+        align-items: center;
+        justify-items: center;
+        position: sticky;
+        top: 0;
+        z-index: 2;
+    }
+    .nav-item2{
+        font-family: 'Allison', cursive;font-family: 'Azeret Mono', monospace;
+        font-size: 5em;
+        color: white;
+    }
+    .nav-logo-link{
+        text-decoration: none;
+    }
+    .nav-link{
+        text-decoration: none;
+        color: white;
+        font-family: 'Azeret Mono', monospace;
+    }
+    .nav-link:hover{
+        text-decoration: none;
+        color: #45cb85;
+        transition: 0.2s;
+    }
+    .button-link{
+        text-decoration: none;
+        color: white;
+        font-family: 'Azeret Mono', monospace;
+    }
+    .nav-item9{
+        border-radius: 5px;
+        padding: 12px 18px;
+        margin: 0.618em;
+        background-color: #45cb85;
+    }
+    .nav-item9:hover{
+        background-color: #75d6a4;
+        transition: 0.2s;
+    }
+    /* Navbar */
+    /* Banner */
+    .banner-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, auto);
+        align-items: center;
+    }
+    .banner-item1{
+        font-family: 'Poppins', sans-serif;
+        justify-self: center;
+        align-self: center;
+        font-size: 48px;
+    }
+    .subscribe-btn{
+        border-radius: 5px;
+        padding: 12px 18px;
+        margin: 0.618em;
+        background-color: #45cb85;
+        width: 80%;
+        justify-self: center;
+        text-align: center;
+    }
+    .banner-item2-link{
+        text-decoration: none;
+        color: white;
+        font-family: 'Azeret Mono', monospace;
+    }
+    .banner-item3{
+        font-family: 'Poppins', sans-serif;
+        justify-self: start;
+        align-self: center;
+        font-size: 48px;
+    }
+    .banner-item3{
+        font-family: 'Poppins', sans-serif;
+        justify-self: start;
+        align-self: center;
+        font-size: 48px;
+    }
+    .banner-item6{
+        background-color: #48acf0;
+        color: white;
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-family: 'Poppins', sans-serif;
+        font-size: 21px;
+        letter-spacing: 0.03em;
+        line-height: 1.6em;
+        font-weight: 400;
+    }
+    #panel, .flip {
+    font-size: 16px;
+    padding: 10px;
+    text-align: center;
+    background-color: #4CAF50;
+    color: white;
+    border: solid 1px #a6d8a8;
+    margin: auto;
+    }
+
+    #panel {
+    display: none;
+    }
+    .sub-link{
+        text-decoration: none;
+        color: white;
+    }
+    /* Banner */
+    </style>
+    <!-- CSS-->
+    <!-- JS-->
+    <script>
+        function myFunction() {
+          document.getElementById("panel").style.display = "block";
+        }
+    </script>    
+    <!-- JS-->
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar-container">
+        <div class="nav-item1"></div>
+        <a href="#" class="nav-logo-link"><div class="nav-item2">FinTech</div></a>
+        <div class="nav-item3"></div>
+        <a href="#" class="nav-link"><div class="nav-item4">Tools</div></a>
+        <a href="#" class="nav-link"><div class="nav-item5">Stocks</div></a>
+        <a href="#" class="nav-link"><div class="nav-item6">Blogs</div></a>
+        <a href="#" class="nav-link"><div class="nav-item7">Donate</div></a>
+        <a href="#" class="nav-link"><div class="nav-item8">About Us</div></a>
+        <a href="blogs.html" class="button-link"><div class="nav-item9">Subscribe to our newsletter</div></a>
+    </div>
+    <!-- Navbar -->    
+    <!-- Banner-->
+    <div class="banner-container">
+        <div class="banner-item1">Our Blogs</div>
+        <div class="banner-item2-link"><form action="#" method="POST"><a href="#" class="sub-link">
+            <p class="flip" onclick="myFunction()">Subscribe to Our Blog</a>
+            <div id="panel">
+            <div><p>Username:</p></div>
+            <div><input name="username" type="text"></div>
+            <div><p>Email:</p></div>
+            <div><input name="email" type="email"></div>
+            <input type="submit">
+            </div></p></form>
+        </div>
+        <div class="banner-item3">Recent Posts</div>
+        <div class="banner-item4"><h2>Blog Heading</h2><p>Blog Text</p></div>
+        <div class="banner-item5"><h2>Blog Heading</h2><p>Blog Text</p></div>
+        <div class="banner-item6">© 2020 CF-22  |  DPS Azaad Nagar</div>
+    </div>
+    <!-- Banner-->
+</body>
+</html>
