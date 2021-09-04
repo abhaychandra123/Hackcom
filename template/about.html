@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <!-- Azert Mono Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@300&display=swap" rel="stylesheet">
+    <!-- Azert Mono Font-->
+    <style>
+/* Navbar */
+body{
+margin: 0;
+}
+.navbar-container{
+    background-color: black;
+    grid-area: header;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: auto;
+    align-items: center;
+    justify-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+.nav-item2{
+    font-family: 'Azeret Mono', monospace;
+    font-size: 3em;
+    color: white;
+}
+.nav-logo-link{
+    text-decoration: none;
+}
+.nav-link{
+    text-decoration: none;
+    color: white;
+    font-family: 'Azeret Mono', monospace;
+}
+.nav-link:hover{
+    text-decoration: none;
+    color: #45cb85;
+    transition: 0.2s;
+}
+.button-link{
+    text-decoration: none;
+    color: white;
+    font-family: 'Azeret Mono', monospace;
+}
+.nav-item9{
+    border-radius: 5px;
+    padding: 12px 18px;
+    margin: 0.618em;
+    background-color: #45cb85;
+}
+.nav-item9:hover{
+    background-color: #75d6a4;
+    transition: 0.2s;
+}
+/* Navbar */
+/* About Us */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+/* About Us */
+</style>
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar-container">
+        <div class="nav-item1"></div>
+        <a href="#" class="nav-logo-link"><div class="nav-item2">FTnator</div></a>
+        <div class="nav-item3"></div>
+        <a href="#" class="nav-link"><div class="nav-item4">Tools</div></a>
+        <a href="#" class="nav-link"><div class="nav-item5">Stocks</div></a>
+        <a href="#" class="nav-link"><div class="nav-item6">Blogs</div></a>
+        <a href="#" class="nav-link"><div class="nav-item7">Donate</div></a>
+        <a href="#" class="nav-link"><div class="nav-item8">About Us</div></a>
+        <a href="blogs.html" class="button-link"><div class="nav-item9">Subscribe to our newsletter</div></a>
+    </div>
+    <!-- Navbar -->
+    <!-- About Us-->
+    <div class="about-section">
+        <h1>About Us</h1>
+        <p>We are CF - 22</p>
+        <p>and we are representing DPS Azaad Nagar for Hackcom 2021</p>
+      </div>
+      
+      <h2 style="text-align:center">Our Team</h2>
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <img src="../static/chin.jpg" alt="Chinmay" style="width:100%">
+            <div class="container">
+              <h2>Chinmay Barik</h2>
+              <p class="title">HTML & CSS Front End Developer</p>
+              <p>Designed Front-end of the website and added animated graphics to homepage.</p>
+              <p>chinmaybarik214@gmail.com</p>
+              <p><button class="button">Contact</button></p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="column">
+          <div class="card">
+            <img src="../static/abhz.jpg" alt="Abhay" style="width:100%">
+            <div class="container">
+              <h2>Abhay Chandra</h2>
+              <p class="title">django & python Backend Developer</p>
+              <p>Designed Backend for Blog subscriptions, automatic mail transfer and GST Calculator</p>
+              <p>abhaychandra2499@gmail.com</p>
+              <p><button class="button">Contact</button></p>
+            </div>
+          </div>
+        </div>
+        
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <img src="../static/Arihant.jpg" alt="Arihant" style="width:100%">
+            <div class="container">
+              <h2>Arihant Srivastava</h2>
+              <p class="title">Javascript Backend Developer</p>
+              <p>Designed Currency Converter, To Do List and CI SI Calculators</p>
+              <p>arihantsrivastava71011@gmail.com</p>
+              <p><button class="button">Contact</button></p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="column">
+          <div class="card">
+            <img src="" alt="Gargi" style="width:100%">
+            <div class="container">
+              <h2>Gargi Pal</h2>
+              <p class="title">Ideator & Presenter</p>
+              <p>Helped in Presentations, and representation of the website.</p>
+              <p>abc@example.com</p>
+              <p><button class="button">Contact</button></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- About Us-->
+</body>
+</html>
