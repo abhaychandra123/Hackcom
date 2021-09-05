@@ -108,6 +108,21 @@ margin: 0;
     line-height: 1.2em;
     margin: 15px 0.67em 0.67em 15px;
 }
+.banner-p2{
+    width: 50%;
+    font-size: 48px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.2em;
+    margin: 15px 0.67em 0.67em 15px;
+    margin-bottom: -10px;
+}
+.banner-p3{
+    width: 100%;
+    font-size: 36px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.2em;
+    margin: 15px 0.67em 0.67em 15px;
+}
 .divider{
     background-color: rgb(97,141,43);
     color: white;
@@ -205,6 +220,22 @@ margin: 0;
     color: white;
     margin: 200px 0 200px 0;
 }
+.vid-container{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+    "heading"
+    "video";
+    margin: 10px;
+}
+.vid1{
+    grid-area: heading;
+    min-height: 100px;
+}
+.vid2{
+    grid-area: video;
+}
 /* tools */
 /* YT vid */
 /* YT vid */
@@ -265,6 +296,14 @@ margin: 0;
     </section>
     <!-- Divider-->
     <!-- YT Vid-->
+    <div class="vid-container">
+        <div class="vid1"><h2 class="banner-p2">Still Confused?</h2><p class="banner-p3">Watch this short video explaining all the concepts used above.</p></div>
+        <div class="vid2"><iframe width="100%" height="600" src="https://www.youtube.com/embed/2R90xwbtnZs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+    </div>
     <!-- YT Vid-->
+    <!-- Divider-->
+    <section class="divider">
+    </section>
+    <!-- Divider-->
 </body>
 </html>
