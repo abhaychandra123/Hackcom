@@ -14,7 +14,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <!-- Roboto Font-->
-    <title>FinTech</title>
+    <title>FTnator</title>
 <!-- CSS-->
 <style>
 /* Navbar */
@@ -34,8 +34,8 @@ margin: 0;
     z-index: 2;
 }
 .nav-item2{
-    font-family: 'Allison', cursive;font-family: 'Azeret Mono', monospace;
-    font-size: 5em;
+    font-family: 'Azeret Mono', monospace;
+    font-size: 3em;
     color: white;
 }
 .nav-logo-link{
@@ -69,7 +69,7 @@ margin: 0;
 /* Navbar */
 /* banner-home */
 .video-container {
-    height: 400px;
+    height: 600px;
     width: 100%;
     position: relative;
 }
@@ -121,6 +121,121 @@ margin: 0;
     font-weight: 400;
 }
 /* banner-home */
+/* chill-items */
+.chill-container{
+    display: grid;
+    background-color: black;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "contenta contentb";
+}
+.chill-item1{
+    grid-area: contenta;
+}
+.chill-item2{
+    background-image: linear-gradient(90deg, red, #f0f600);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    grid-area: contentb;
+    font-size: 60px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.2em;
+    margin: 15px 0.67em 0.67em 15px;
+    align-self: center;
+}
+/* chill-items */
+/* tools */
+.tool-container{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: 
+    "contenta image1"
+    "contentb image1"
+    "image2 contentc"
+    "image2 contentd";
+}
+.tool-item1{
+    background-image: url("/static/red-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-area: contenta;
+}
+.tool-item2{
+    background-image: url("/static/green-bg.png");
+    grid-area: contentb;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.tool-item3{
+    background-image: url("/static/blue-bg.png");
+    grid-area: contentc;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.tool-item4{
+    background-image: url("/static/dark-bg.png");
+    grid-area: contentd;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.tool-item5{
+    background-image: url("../static/calculator.jpg");
+    background-attachment: fixed;
+    background-position: bottom 0 right 0;
+    min-height: 400px;
+    grid-area: image1;
+    background-repeat: no-repeat;
+}
+.tool-item6{
+    background-image: url("../static/coins.jpg");
+    background-attachment: fixed;
+    background-position: bottom 0 left 0;
+    min-height: 400px;
+    grid-area: image2;
+    background-repeat: no-repeat;
+}
+.tool-item-heading{
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: white;
+    margin: 200px 0 200px 0;
+}
+.banner-item6{
+        background-color: #48acf0;
+        color: white;
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-family: 'Poppins', sans-serif;
+        font-size: 21px;
+        letter-spacing: 0.03em;
+        line-height: 1.6em;
+        font-weight: 400;
+    }
+/* tools */
+/* YT vid */
+    .vid-container{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+    "heading"
+    "video";
+    margin: 10px;
+}
+.vid1{
+    grid-area: heading;
+    min-height: 100px;
+}
+.vid2{
+    grid-area: video;
+}
+/* YT vid */
 </style>
 <!-- CSS-->
 </head>
@@ -130,11 +245,11 @@ margin: 0;
         <div class="nav-item1"></div>
         <a href="#" class="nav-logo-link"><div class="nav-item2">FTnator</div></a>
         <div class="nav-item3"></div>
-        <a href="#" class="nav-link"><div class="nav-item4">Tools</div></a>
-        <a href="#" class="nav-link"><div class="nav-item5">Stocks</div></a>
-        <a href="#" class="nav-link"><div class="nav-item6">Blogs</div></a>
-        <a href="#" class="nav-link"><div class="nav-item7">Donate</div></a>
-        <a href="#" class="nav-link"><div class="nav-item8">About Us</div></a>
+        <a href="#toollink" class="nav-link"><div class="nav-item4">Tools</div></a>
+        <a href="https://www.moneycontrol.com/stocksmarketsindia/" target="_blank" class="nav-link"><div class="nav-item5">Stocks</div></a>
+        <a href="blog/" class="nav-link"><div class="nav-item6">Blogs</div></a>
+        <a href="https://help.unicef.org/in/covid/jeevanrath?campaignID=7011i000000hyrIAAQ&country=IN&campaignid=14318014047&adgroupid=131702886208&adid=539862305500&gclid=Cj0KCQjwssyJBhDXARIsAK98ITRk_kGX7NRCx8LduC1ht92Qfk6mXHlOneDd7qQX8eIkPIAj3yX2UiwaAnPhEALw_wcB" target="_blank" class="nav-link"><div class="nav-item7">Donate</div></a>
+        <a href="aboutus/" class="nav-link"><div class="nav-item8">About Us</div></a>
         <a href="blog/" class="button-link"><div class="nav-item9">Subscribe to our newsletter</div></a>
     </div>
     <!-- Navbar -->
@@ -148,10 +263,43 @@ margin: 0;
         </div>
     </div>
     <!-- banner-home-->
+    <!-- Relieve Stress--> 
+    <div class="chill-container">   
+    <div class="video-container chill-item1">
+        <video autoplay muted loop>
+            <source src="../static/pendulum2.mp4" type="video/mp4" />
+        </video>
+    </div>
+    <div class="chill-item2"><p style="color: white; margin: 0;">We are here to </p>relieve your financial stress</div>
+    </div>
+    <!-- Relieve Stress-->
     <!-- Divider-->
     <section class="divider">
         Make Finance Easy with 	—
     </section>
     <!-- Divider-->
+    <!-- Tools-->
+    <a name="toollink"></a>
+    <div class="tool-container">
+        <a href="sici/" style="text-decoration: none;" class="tool-item1"><div><h2 class="tool-item-heading"><span>Interest/Loan Calculator</span></h2></div></a>
+        <a href="todo/" style="text-decoration: none;" class="tool-item2"><div><h2 class="tool-item-heading"><span>To Do List</span></h2></div></a>
+        <a href="gst/" style="text-decoration: none;" class="tool-item3"><div><h2 class="tool-item-heading"><span>GST Calculator</span></h2></div></a>
+        <a href="currency/" style="text-decoration: none;" class="tool-item4"><div><h2 class="tool-item-heading"><span>Currency Converter</span></h2></div></a>
+        <div class="tool-item5"></div>
+        <div class="tool-item6"></div>
+    </div>
+    <!-- Tools-->
+    <!-- Divider-->
+    <section class="divider">
+    </section>
+    <!-- Divider-->
+    <!-- YT Vid-->
+    <div class="vid-container">
+        <div class="vid1"><h2 class="banner-p2">Still Confused?</h2><p class="banner-p3">Watch this short video explaining all the concepts used above.</p></div>
+        <div class="vid2"><iframe width="100%" height="600" src="https://www.youtube.com/embed/2R90xwbtnZs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+    </div>
+    <!-- YT Vid-->
+    <div class="banner-item6">© 2020 CF-22  |  DPS Azaad Nagar</div>
+    
 </body>
 </html>

@@ -21,8 +21,16 @@ from mainapp import urls
 urlpatterns = [
     path('admin/', admin.site.urls),
     path("", include('mainapp.urls')),
-    path("sus/", include('mainapp.urls')),
-    path("blog/", include("mainapp.urls"))
+    path("blog/", include("mainapp.urls")),
+    path("currency/",include('mainapp.urls')),
+    path("todo/",include('mainapp.urls')),
+    path("sici/",include('mainapp.urls')),
+    path("gst/",include('mainapp.urls')),
+    path("aboutus/",include('mainapp.urls')),
+
+
+
+
     
     
 ]

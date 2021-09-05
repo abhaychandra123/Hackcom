@@ -1,0 +1,70 @@
+<html>
+<head>
+<title>Simple Interest and Compound Interest</title>
+<style>
+    body{
+        background-image: url("../static/blue-bg.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .hea{
+        font-size: 70px;
+        font-weight: bolder;
+        text-decoration: underline;
+        /* text-shadow: 3px -5px 0px aqua, -3px 5px 0px red; */
+    }
+    .inp{
+        color: chartreuse;
+        font-weight: bolder;
+        margin: 10px;
+        font-size: 2.5em;
+        border-radius: 20px;
+        height: 70px;
+        width: 40vw;
+        background-color: rgba(0,0,0, 0.5)
+    }
+</style>
+    
+</head>
+<body>
+    <p class="hea">SIMPLE AND COMPOUND INTEREST CALCULATOR</p>
+<table>
+<tr>
+<td> ENTER PRINCIPAL AMOUNT:<BR><input type="text" name="a"  class="inp"  id="principle" placeholder="Enter principal"/> </td>
+</tr>
+<tr>
+<td> ENTER THE TIME PERIOD:<BR><input type="text" name="b" class="inp"  id="time" placeholder="Enter time period "/> </td>
+</tr>
+<tr>
+<td> ENTER THE RATE OF INTEREST:<BR><input type="text" name="c"  class="inp" id="rate" placeholder="Enter rate of interest(%)"/> </td>
+</tr>
+<tr>
+<td> <button onclick = "sici()" >Submit</button> </td>
+</tr>
+</table>
+<div id="num"> </div>
+<div id="num1"></div>
+<div id="num2"></div>
+<div id="num3"></div>
+          <div style=" border-radius: 20px; padding:10px 50px 10px 50px; height: 50px; width: 300px; background: black;"><a style="text-decoration: none; color: white;" href="/">Return To HOMEPAGE</a></div>
+
+
+</body>
+
+<script>
+function sici(){
+    
+    let p = document.getElementById("principle").value;
+    let r = document.getElementById("rate").value;
+    let t = document.getElementById("time").value;
+    let SI = (p*r*t)/100;
+    let Asi= parseFloat(p) + parseFloat((p*r*t)/100);
+    let A = p*(1+r/100)**t;
+    let CI = A-p;
+    document.getElementById("num").innerHTML=`${SI}`;
+    document.getElementById("num1").innerHTML="Your amount of S.I. is  "+`${Asi}`;
+    document.getElementById("num2").innerHTML=`${CI}`;
+    document.getElementById("num3").innerHTML="Your amount of C.I. is  "+`${A}`;
+}
+</script>
+</html>
