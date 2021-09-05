@@ -1,25 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Poppins Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+  <!-- Poppins Font -->
     <style>
     /* add style here */
     </style>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Currency Converter</title>
+    <!-- Azert Mono Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@300&display=swap" rel="stylesheet">
+    <!-- Azert Mono Font-->
+    <style>
+      /* Navbar */
+body{
+margin: 0;
+}
+.navbar-container{
+    background-color: black;
+    grid-area: header;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: auto;
+    align-items: center;
+    justify-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+.nav-item2{
+    font-family: 'Azeret Mono', monospace;
+    font-size: 3em;
+    color: white;
+}
+.nav-logo-link{
+    text-decoration: none;
+}
+.nav-link{
+    text-decoration: none;
+    color: white;
+    font-family: 'Azeret Mono', monospace;
+}
+.nav-link:hover{
+    text-decoration: none;
+    color: #45cb85;
+    transition: 0.2s;
+}
+.button-link{
+    text-decoration: none;
+    color: white;
+    font-family: 'Azeret Mono', monospace;
+}
+.nav-item9{
+    border-radius: 5px;
+    padding: 12px 18px;
+    margin: 0.618em;
+    background-color: #45cb85;
+}
+.nav-item9:hover{
+    background-color: #75d6a4;
+    transition: 0.2s;
+}
+/* Navbar */
+    </style>
 </head>
 <body>
-    <div class="jumbotron">
+  <!-- Navbar -->
+  <div class="navbar-container">
+    <div class="nav-item1"></div>
+    <a href="#" class="nav-logo-link"><div class="nav-item2">FTnator</div></a>
+    <div class="nav-item3"></div>
+    <a href="#" class="nav-link"><div class="nav-item4">Tools</div></a>
+    <a href="#" class="nav-link"><div class="nav-item5">Stocks</div></a>
+    <a href="#" class="nav-link"><div class="nav-item6">Blogs</div></a>
+    <a href="#" class="nav-link"><div class="nav-item7">Donate</div></a>
+    <a href="#" class="nav-link"><div class="nav-item8">About Us</div></a>
+    <a href="blogs.html" class="button-link"><div class="nav-item9">Subscribe to our newsletter</div></a>
+</div>
+<!-- Navbar -->
+    <div class="jumbotron" style="background-color: lightgray;
+    padding: 20px;
+    margin: 1em;
+    border-radius: 5px;
+    box-shadow: 6px 6px 2px 1px grey;">
         <div class="container">
-         <h2>Currency Calculator</h2>
-         <p class="lead">Convert the currency</p>
+         <h2 style="grid-area: heading;
+         padding: 12px 18px;
+         margin: 0 0.618em 0 0.618em;
+         font-family: 'Poppins', sans-serif;
+         font-size: 42px;
+         letter-spacing: 0.03em;
+         justify-self: center;">Currency Calculator</h2>
+         <p class="lead" style="font-size: 24px; margin: 0; font-family: 'Poppins', sans-serif; display: inline;">Convert the currency:</p>
          <form class="form-inline">
            <div class="form-group mb-2">
-              <input type="number" class="form-control" id="amount"/>
+              <input type="number" class="form-control" id="amount" style="font-size: 24px; margin: 0; font-family: 'Poppins', sans-serif;"/>
            </div>
            <div class="form-group mx-sm-3 mb-2">
-              <select class="form-control" id="currency-1" required>
+              <select class="form-control" id="currency-1" required style="padding: 10px; margin-top: 1em;">
                 <option>INR</option>
                 <option>EUR</option>
                 <option>USD</option>
@@ -31,8 +116,8 @@
               </select>
             </div>
             <div class="form-group mx-sm-3 mb-2">
-              <label>convert to</label>
-              <select class="form-control" id="currency-2" required>
+              <label style="font-size: 24px; margin: 0; font-family: 'Poppins', sans-serif; display: inline;">convert to:</label>
+              <select class="form-control" id="currency-2" required style="padding: 10px; margin: 1em;">
                 <option>INR</option>
                 <option>EUR</option>
                 <option>USD</option>
@@ -43,9 +128,9 @@
                 <option>GBP</option>
               </select>
             </div>  
-            <button class="btn calculate-btn btn-primary mb-2">Show me the result!</button>
+            <button class="btn calculate-btn btn-primary mb-2" style="padding: 20px;">Show me the result!</button>
           </form>
-          <div class="result">
+          <div class="result" style="font-size: 24px; margin: 0; font-family: 'Poppins', sans-serif; display: inline;">
             <p>
               <span class="given-amount"></span> 
               <span class="base-currency"></span>
@@ -55,7 +140,6 @@
           </div>
         </div> 
       </div>
-      <div ><a href="/">Return To HOMEPAGE</a></div>
   <script>
 
         var curry={'INR':{'USD':0.014,'EUR':0.012,'YEN':1.50,'AUD':0.018,'GBP':0.0099,'FRF':0.07565,'PKR':2.29},
