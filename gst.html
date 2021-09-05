@@ -1,18 +1,103 @@
 <!DOCTYPE html>
 <html>
+    <head>  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js" type="text/javascript"></script>
+        <!-- Poppins Font -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+      <!-- Poppins Font -->
+      <!-- Azert Mono Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@300&display=swap" rel="stylesheet">
+    <!-- Azert Mono Font-->
+    <style>
+        /* Navbar */
+body{
+margin: 0;
+}
+.navbar-container{
+    background-color: black;
+    grid-area: header;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: auto;
+    align-items: center;
+    justify-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+.nav-item2{
+    font-family: 'Azeret Mono', monospace;
+    font-size: 3em;
+    color: white;
+}
+.nav-logo-link{
+    text-decoration: none;
+}
+.nav-link{
+    text-decoration: none;
+    color: white;
+    font-family: 'Azeret Mono', monospace;
+}
+.nav-link:hover{
+    text-decoration: none;
+    color: #45cb85;
+    transition: 0.2s;
+}
+.button-link{
+    text-decoration: none;
+    color: white;
+    font-family: 'Azeret Mono', monospace;
+}
+.nav-item9{
+    border-radius: 5px;
+    padding: 12px 18px;
+    margin: 0.618em;
+    background-color: #45cb85;
+}
+.nav-item9:hover{
+    background-color: #75d6a4;
+    transition: 0.2s;
+}
+/* Navbar */
+    </style>
+        </head>
 <body>
-    <head>  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js" type="text/javascript"></script>  </head>
-    <h1>GST Calculation</h1>
+    <!-- Navbar -->
+    <div class="navbar-container">
+        <div class="nav-item1"></div>
+        <a href="#" class="nav-logo-link"><div class="nav-item2">FTnator</div></a>
+        <div class="nav-item3"></div>
+        <a href="#" class="nav-link"><div class="nav-item4">Tools</div></a>
+        <a href="#" class="nav-link"><div class="nav-item5">Stocks</div></a>
+        <a href="#" class="nav-link"><div class="nav-item6">Blogs</div></a>
+        <a href="#" class="nav-link"><div class="nav-item7">Donate</div></a>
+        <a href="#" class="nav-link"><div class="nav-item8">About Us</div></a>
+        <a href="blogs.html" class="button-link"><div class="nav-item9">Subscribe to our newsletter</div></a>
+    </div>
+    <!-- Navbar -->
+    <div style="background-color: lightgray;
+    padding: 20px;
+    margin: 1em;
+    border-radius: 5px;
+    box-shadow: 6px 6px 2px 1px grey;">
+    <h1 style="grid-area: heading;
+    padding: 12px 18px;
+    margin: 0 0.618em 0 0.618em;
+    font-family: 'Poppins', sans-serif;
+    font-size: 42px;
+    letter-spacing: 0.03em;
+    justify-self: center;"> GST Calculation</h1>
     <form method="post" action="">
         <input type="hidden" name="mode" value="PinRequest" />
-        <label><b>Fee</b></label>
-        <input class="w3-input w3-border" name="pages" id="pages" type="text"><br><br>
-        <label><b>Total Amount</b></label>
-        <input class="w3-input w3-border" name="tot_amount" id="tot_amount" type="text">
-        <input type="submit" name="save" value="submit">
+        <label style="font-size: 24px; margin: 0; font-family: 'Poppins', sans-serif; display: inline;"><b>Fee:</b></label>
+        <input class="w3-input w3-border" name="pages" id="pages" type="text"  style="padding: 10px;"><br><br>
+        <label style="font-size: 24px; margin: 0; font-family: 'Poppins', sans-serif; display: inline;"><b>Total Amount:</b></label>
+        <input class="w3-input w3-border" name="tot_amount" id="tot_amount" type="text" style="padding: 10px;">
+        <input type="submit" name="save" value="submit" style="padding: 10px;">
     <closeform></closeform></form>
-      <div ><a href="/">Return To HOMEPAGE</a></div>
-
     <script>
         $(document).ready(function() {
             $('#pages').keyup(function(ev) {
